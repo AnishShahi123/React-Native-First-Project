@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import React, { useState } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const onPress = () => setCount(prevCount => prevCount + 1);
+  const onPress = () => setCount((prevCount) => prevCount + 1);
 
   return (
     <View style={styles.container}>
@@ -20,16 +20,16 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     paddingHorizontal: 10,
   },
   button: {
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
+    alignItems: "center",
+    backgroundColor: "#DDDDDD",
     padding: 10,
   },
   countContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     padding: 10,
   },
 });
